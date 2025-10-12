@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Registration</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>Registration</h2>
+    <form method="POST" action="/register">
+      <label for="lastname">Lastname</label>
+      <input type="text" id="lastname" name="lastname" required>
+
+      <label for="firstname">Firstname</label>
+      <input type="text" id="firstname" name="firstname" required>
+
+      <label>Sex</label>
+      <div class="radio-group">
+        <label><input type="radio" name="sex" value="Male" required> Male</label>
+        <label><input type="radio" name="sex" value="Female" required> Female</label>
+      </div>
+
+      <label for="institution">Institution</label>
+      <select id="institution" name="institution" required>
+        <option value="">-- Select Institution --</option>
+        <option>PSU</option>
+        <option>UCU</option>
+        <option>PU</option>
+      </select>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <button type="submit">REGISTER</button>
+    </form>
+  </div>
+</body>
+</html>

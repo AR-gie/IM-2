@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Details</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>Registration Details</h2>
+    <div class="details">
+      <p><strong>Lastname:</strong> {{ lastname }}</p>
+      <p><strong>Firstname:</strong> {{ firstname }}</p>
+      <p><strong>Sex:</strong> {{ sex }}</p>
+      <p><strong>Institution:</strong> {{ institution }}</p>
+      <p><strong>Email:</strong> {{ email }}</p>
+    </div>
+    <a href="/Mabalot_HW3" class="back-btn">Register Another</a>
+  </div>
+</body>
+</html>
